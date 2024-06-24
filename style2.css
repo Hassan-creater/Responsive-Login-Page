@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.main-box{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box{
+    width: 50%;
+    height: 70vh;
+    background-color:rgba(154, 153, 152, 0.5);
+    border-radius: 3vw;
+}
+
+.content-box h1{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 3vw;
+    color: #f6a33e;
+    font-weight: bolder;
+}
+
+.email,.password,.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email{
+    margin-top: 10vh;
+}
+.email input,.password input{
+    height: 50px;
+    width: 30vw;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding-left: 14px;
+    font-size: 1rem;
+    color: white;
+    background-color:rgba(69, 69, 68, 0.6);
+    margin-bottom:15px;
+    box-shadow: 3px 3px rgb(243, 159, 76);
+}
+.email input::placeholder{
+    color:white
+}
+.password input::placeholder{
+    color: white;
+}
+
+.remember-me{
+    display: flex;
+    margin-left: 9.5vw;
+    
+}
+.remember-me input{
+    margin-right:3px;
+    
+}
+
+.remember-me p{
+    font-size:13px;
+    margin-top: 3px;
+    margin-right:16.5vw;
+}
+
+.remember-me a{
+    font-size:12.5px ;
+    margin-top: 3.5px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5vw;
+}
+
+.remember-me a span{
+    font-weight: bolder;
+    color: #f6a33e;
+}
+
+.button{
+    margin-top: 10vh;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    width: 6.5rem;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: #f6a33e;
+    box-shadow: 2px 2px rgb(91, 89, 89);
+}
+.button span{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.register{
+    margin-left: 16.3vw;
+    margin-top:1rem ;
+}
+
+.register p{
+    letter-spacing: 1px;
+    color: white;
+}
+.register p span{
+    color: #f6a33e;
+    margin-left: 2px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media (max-width:1400px) {
+    .remember-me p{
+        margin-right:14vw;
+    }
+}
+
+@media (max-width:1100px) {
+    
+    .remember-me p{
+        font-size: 12px;
+        margin-top: 4px;
+        margin-right: 12vw;
+        
+    }
+    .remember-me a span{
+        text-align: center;
+    }
+    .register{
+       margin-left: 14vw;
+    }
+}
+
+@media (max-width:950px) {
+    .register{
+        margin-left:12vw ;
+    }
+}
+
+@media (max-width:800px) {
+    .register{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:790px) {
+    .content-box{
+        width: 70%;
+        height: 50%;
+    }
+    .content-box h1{
+        font-size: 3em;
+    }
+    .email{
+        margin-top:4em;
+        
+    }
+    .email input,.password input{
+        width: 70%;
+    }
+    .remember-me p{
+        margin-right: 10.5rem;
+    }
+    .register{
+        margin-left: 10rem;
+    }
+    .button{
+        margin-top: 4em;
+    }
+}
+
+@media (max-width:750px) {
+    .content-box{
+        width:80vw;
+        height: 50vh;
+    }
+    .content-box h1{
+        margin-top: 40px;
+        font-size: 3rem;
+    }
+
+    .email input,.password input{
+        width: 50vw;
+    }
+
+    .remember-me{
+        margin-left: 7em;
+    }
+    .remember-me p{
+        margin-right: 13em;
+    }
+    .button{
+        margin-top: 6vh;
+    
+    }
+    .register p{
+        margin-left: 8vh;
+    }
+
+}
+
+
+@media (max-width:600px){
+    .content-box{
+        width:70%;
+        height: 50vh;
+    }
+
+    .content-box h1{
+        margin-bottom: 1vh;
+    }
+    .email input,.password input{
+        width: 30vh;
+
+    }
+    .remember-me{
+        margin-left: 4rem;
+    }
+
+    .remember-me p{
+        margin-right: 5rem;
+    }
+
+    .button{
+        margin-top:20px;
+    }
+    .register{
+        margin-left: 7px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .content-box{
+        height: 70vh;
+    }
+
+    .remember-me p{
+        margin-right: 3.5em;
+        font-size: .7em;
+        
+    }
+    .remember-me{
+        margin-left: 2.5em;
+    }
+    .remember-me a{
+        font-size: .7em;
+    }
+    .button{
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width:415px) {
+    .content-box{
+        height: 50%;
+        width: 80%;
+    }
+
+    .email{
+        margin-top: 50px;
+    }
+
+    .remember-me p{
+        margin-right: 75px;
+    }
+}
